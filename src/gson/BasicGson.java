@@ -11,7 +11,7 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 
-public class Json {
+public class BasicGson {
 
 	public static void main(String[] args) throws JsonSyntaxException, JsonIOException, FileNotFoundException {
 
