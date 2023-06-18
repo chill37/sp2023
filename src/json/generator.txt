@@ -1,0 +1,4 @@
+json to java code generator
+https://www.site24x7.com/tools/json-to-java.html
+https://codebeautify.org/json-to-java-converter
+https://www.jsonschema2pojo.org/
