@@ -17,8 +17,8 @@ public class MyServer {
 		server.addConnector(http);
 
 		ServletHandler servletHandler = new ServletHandler();
-		servletHandler.addServletWithMapping(MyServlet.class, "/mypath");
-		servletHandler.addServletWithMapping(MyServlet.class, "/mypath2");
+		servletHandler.addServletWithMapping(MyServlet.class, "/path1");
+		servletHandler.addServletWithMapping(MyServlet.class, "/path2");
 
 		server.setHandler(servletHandler);
 

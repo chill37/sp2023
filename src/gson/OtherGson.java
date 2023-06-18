@@ -13,11 +13,12 @@ public class OtherGson {
     public static void main(String[] args) {
 
         mapParser();
+        System.out.println("==============================");
         jsonElementParser();
     }
 
     private static void mapParser() {
-        String jsonString = "{\"name\": \"John\", \"age\": 30, \"city\": \"New York\"}";
+        String jsonString = "{\"name\": \"John\", \"age\": 30, \"city\": \"New York\", \"rating\": 4.5}";
 
         Gson gson = new Gson();
 
@@ -27,12 +28,14 @@ public class OtherGson {
 
         // Access the values from the Map
         String name = (String) dataMap.get("name");
-        int age = (int) dataMap.get("age");
+        int age = ((Number) dataMap.get("age")).intValue();
         String city = (String) dataMap.get("city");
+        double rating = ((Number) dataMap.get("rating")).doubleValue();
 
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("City: " + city);
+        System.out.println("Rating: " + rating);
     }
 
     private static void jsonElementParser() {
